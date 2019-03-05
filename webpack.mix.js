@@ -12,4 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+    .copy('node_modules/vuejs-datatable/dist/vuejs-datatable.js', 'public/js/vuejs-datatable/vuejs-datatable.js')
+    .copy('node_modules/moment/moment.js', 'public/js/moment/moment.js');
